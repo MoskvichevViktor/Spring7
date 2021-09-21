@@ -1,0 +1,15 @@
+server:
+  port:8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/product
+    username: root
+    password: 712459
+
+  jpa:
+    show-sql: true
+    properties.hibernate.current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
